@@ -1,6 +1,6 @@
-# Estruturas Condicionais em Java
+# Estruturas Condicionais e Laços de Repetição em Java
 
-Este projeto contém exemplos práticos de diferentes tipos de estruturas condicionais em Java, demonstrando como usar `if-else`, `switch` tradicional, `switch` com expressões (Java 14+) e operador ternário.
+Este projeto contém exemplos práticos de estruturas condicionais e laços de repetição em Java, demonstrando como usar `if-else`, operador ternário, `switch` tradicional e `switch` com expressões (Java 14+), além de laços `for`, `while`, `do-while` e `for-each`.
 
 ## 📁 Estrutura do Projeto
 
@@ -9,7 +9,12 @@ src/
 ├── CaixaEletronico.java      # Exemplo de if-else simples
 ├── PlanoOperadora.java       # Exemplo de switch tradicional
 ├── ResultadoEscolar.java     # Exemplo de operador ternário
-└── SistemaMedida.java        # Exemplo de switch com expressões
+├── SistemaMedida.java        # Exemplo de switch com expressões
+├── ExemploBreakContinue.java # Exemplo de break e continue em laços
+├── ExemploDoWhile.java       # Exemplo de do-while com tentativa de ligação
+├── ExemploFor.java           # Exemplo de for simples (contagem)
+├── ExemploForArray.java      # Exemplo de for e for-each em arrays
+└── ExemploWhile.java         # Exemplo de while com gastos de mesada
 ```
 
 ## 🚀 Exemplos Implementados
@@ -70,6 +75,74 @@ Mostra o uso de **switch com expressões** (Java 14+):
 - Arrow syntax (`->`)
 - Retorno direto de valores
 
+### 5. ExemploBreakContinue.java
+
+Demonstra o uso de **break** e **continue** em laços `for`:
+
+- Interrompe o laço ao encontrar um valor específico com `break`
+- Pula uma iteração específica usando `continue`
+- Exibe a diferença prática entre interromper e apenas ignorar a iteração
+
+**Características:**
+
+- Palavras-chave `break` e `continue`
+- Controle de fluxo dentro de laços
+- Condicional `if` dentro do `for`
+
+### 6. ExemploDoWhile.java
+
+Exemplo de **do-while** que simula tentativas de ligação até alguém atender:
+
+- Garante execução do bloco ao menos uma vez (`do-while`)
+- Usa `java.util.Random` para simular a aleatoriedade do atendimento
+- Continua repetindo enquanto ninguém atender
+
+**Características:**
+
+- Estrutura `do { ... } while (condição)`
+- Função auxiliar que retorna `boolean`
+- Saída no console indicando o fluxo de execução
+
+### 7. ExemploFor.java
+
+Demonstra um laço **for** simples de contagem:
+
+- Conta de 1 até 20 imprimindo cada valor
+- Exibe mensagem final após a conclusão do laço
+
+**Características:**
+
+- Laço `for` com inicialização, condição e incremento
+- Impressão sequencial
+
+### 8. ExemploForArray.java
+
+Mostra como iterar arrays com **for** tradicional e **for-each**:
+
+- Itera por índices e acessa elementos do array
+- Itera diretamente pelos valores com `for-each`
+- Exibe o índice atual e o valor correspondente
+
+**Características:**
+
+- Manipulação de arrays de `String`
+- Diferença entre `for` e `for-each`
+- Uso de `alunos.length`
+
+### 9. ExemploWhile.java
+
+Simula compras de doces com **while** até a mesada acabar:
+
+- Gera valores aleatórios para o preço do doce
+- Garante que a compra não ultrapasse a mesada restante
+- Imprime cada compra e o término da mesada
+
+**Características:**
+
+- Laço `while` com condição de parada
+- Uso de `ThreadLocalRandom` para números aleatórios
+- Operações aritméticas e atualização de estado
+
 ## 🛠️ Como Executar
 
 ### Pré-requisitos
@@ -80,10 +153,14 @@ Mostra o uso de **switch com expressões** (Java 14+):
 ## 📚 Conceitos Demonstrados
 
 - **Estruturas de Controle**: if-else, switch
+- **Estruturas de Repetição**: for, while, do-while
 - **Operadores Condicionais**: ternário, comparação
 - **Fall-through**: comportamento do switch sem break
 - **Switch Expressions**: sintaxe moderna do Java
 - **Lógica Condicional**: múltiplas condições e aninhamento
+- **Iteração sobre Arrays**: for tradicional e for-each
+- **Controle de Fluxo em Laços**: break e continue
+- **Aleatoriedade**: uso de `Random` e `ThreadLocalRandom`
 
 ## 🎯 Objetivos de Aprendizado
 
@@ -100,6 +177,7 @@ Este projeto visa demonstrar:
 - `SistemaMedida` utiliza recursos do Java 14+ (switch expressions)
 - Todos os exemplos são autocontidos e podem ser executados independentemente
 - Os valores das variáveis podem ser modificados para testar diferentes cenários
+- Os exemplos `ExemploFor`, `ExemploWhile`, `ExemploDoWhile`, `ExemploForArray` e `ExemploBreakContinue` demonstram laços de repetição e controle de fluxo
 
 ## 🔗 Recursos Adicionais
 
